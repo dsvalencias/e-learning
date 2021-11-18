@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>mx.com.gm</groupId>
 	<artifactId>HolaMundoThymeLeaf</artifactId>
-	<version>1.0</version>
+	<version>1.1</version>
 	<name>HolaMundoThymeLeaf</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot and ThymeLeaf HTML FrontEnd</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

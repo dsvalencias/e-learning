@@ -15,6 +15,6 @@ import lombok.Data;
 public class Persona {
     private String nombre;
     private String apellido;
-    private String correo;
+    private String email;
     private String telefono;
 }

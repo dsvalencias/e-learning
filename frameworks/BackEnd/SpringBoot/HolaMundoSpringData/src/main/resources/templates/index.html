@@ -13,8 +13,6 @@ and open the template in the editor.
     <body>
         <div>
             <h1>Inicio</h1>
-            <p th:text="${mensaje}"></p>
-            <p th:text="${saludoApp}"></p>
         </div>
         <br><!-- comment -->
         <div th:if="${personal == null or personal.empty}">
@@ -30,11 +28,11 @@ and open the template in the editor.
                     <th>Telefono</th>
                 </tr>
 
-                <tr th:each="persona : ${personal}" border="2">
-                    <td th:text="${persona.nombre}">Nombre</td>
-                    <td th:text="${persona.apellido}">Apellido</td>
-                    <td th:text="${persona.email}">Correo</td>
-                    <td th:text="${persona.telefono}">Telefono</td>
+                <tr th:each="itemPersona : ${personal}" border="2">
+                    <td th:text="${itemPersona.nombre}">Nombre</td>
+                    <td th:text="${itemPersona.apellido}">Apellido</td>
+                    <td th:text="${itemPersona.correo}">Correo</td>
+                    <td th:text="${itemPersona.telefono}">Telefono</td>
                 </tr>
             </table>
         </div>

@@ -5,7 +5,6 @@
  */
 package mx.com.gm;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import lombok.extern.slf4j.Slf4j;
 import mx.com.gm.domain.Persona;
@@ -30,14 +29,14 @@ public class InicioController {
         var persona = new Persona();
         persona.setNombre("Juan");
         persona.setApellido("Perez");
-        persona.setCorreo("jperez@correo.com");
+        persona.setEmail("jperez@correo.com");
         persona.setTelefono("3003003000");
         
         var persona2 = new Persona();
-        persona.setNombre("Juana");
-        persona.setApellido("Gomez");
-        persona.setCorreo("jgomez@correo.com");
-        persona.setTelefono("4004004000");
+        persona2.setNombre("Juana");
+        persona2.setApellido("Gomez");
+        persona2.setEmail("jgomez@correo.com");
+        persona2.setTelefono("4004004000");
         
         var personal = Arrays.asList(persona, persona2);
         log.info("Ejecutando el controlador tipo Spring MVC");

@@ -6,7 +6,7 @@
 package mx.com.gm.web;
 
 import lombok.extern.slf4j.Slf4j;
-import mx.com.gm.service.IPersonaService;
+import mx.com.gm.dao.IPersonaDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.stereotype.Controller;
@@ -21,12 +21,12 @@ import org.springframework.ui.Model;
 public class InicioController {
 
     @Autowired
-    private IPersonaService personaService;
+    private IPersonaDao personaDao;
 
     @GetMapping("/")
     public String inicio(Model model) {
 
-        var personal = personaService.listarPersonas();
+        var personal = personaDao.findAll();
         log.info("Ejecutando el controlador tipo Spring MVC");
 
         model.addAttribute("personal", personal);

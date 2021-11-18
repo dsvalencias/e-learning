@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>mx.com.gm</groupId>
-    <artifactId>ControlClientes</artifactId>
+    <artifactId>HolaMundoSpringData</artifactId>
     <version>1.0</version>
-    <name>ControlClientes</name>
-    <description>Demo project for Spring Service implementation</description>
+    <name>HolaMundoSpringData</name>
+    <description>Demo project for Spring Data Management</description>
     <properties>
         <java.version>11</java.version>
     </properties>
